@@ -1,0 +1,29 @@
+-Introduction: Since the dawn of history human beings have invented and produced wide range of inventions inorder to make their lifes easier . Transportation was one of the greatest challenges humans faced especially long distance transportation or travelling, the invention of airplanes was a game changer for that problem . On one side avaiation made long distance travel easier and more efficient , however it came with challenges and one of those challenges is safety which this machine learning model will help in improving by predicting the crash severity of a plane crash based on specific features from a data provided as a csv file.
+
+-Aim: The aim of this project is to build a machine learning model which will predict the level of crash severity which could be : Minor if no fatalities, Moderate if fatalities are less than 25% of total souls on board, and Sever if the fatalities are more than 25% of total souls on board.
+
+-Strategy: This machine learning model is a multi-class classification project so the approach stratergy will be as follows:
+          1-Importing the necessary liberaries.
+
+          2- Reading the csv file under the name of 'Plane Crashes.csv' .
+
+          3-Columns Descriptions which basically describes the title of each column.
+
+          4-Doing minor changes to the data such as : introducing a new columns (Total On Board, Crash Severity),replacing column "Date" with column called "Year" and reorganizing the                 data columns.
+          
+          5-We understood the dataset by checking data types, and doing summary statistics for numerical values.
+
+          6-Doing some data Preperation which include:Checking for missing values and handling those missing values,checking and removing duplicated rows,convert float to integers,and find            unique values for each categorical column (cardinality).
+
+          7-Constructing EDA (for data analysis) which include:Histograms for (year, YOM , and Total on Board with respect to Total fatalities),Bar Graphs for (Top 10 Aircraft Types, Top 10           Operator , and Top 10 Flight type with respect to Total fatalities),  Pie Charts for:( Total fatalities by Region, Total fatalities by Flight phase, and Total fatalities by                  Crash cause), and some Extra info for data analysis.
+
+          8-Doing some Data Manipulation which include:checking Class distribution of Crash severity as well as Resampling and balancing the class distribution,Encoding categorical features           and putting them in a dictionary, checking the Correlation between target (Crash severity) and rest of the data columns, as well as Scaling thr data.
+
+          9-Machine learing/ Training stage: in which we trained the machine on the clean balanced data,with a Classification Report/Confusion Matrix and we optimized the classifier using           Hyperparameter Tuning.
+
+          10-Deployment: ( Prediction Function - Classify a new crash severity) in which an interaction with the user will take place.
+ 
+          11-Finally, Saving the model.
+
+-Conclusion:A machine learning model was construted in which we take data features from a user and predicting the level of crash severity based on clean data trained with an accuracy of 92.6%.
+          
