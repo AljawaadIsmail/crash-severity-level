@@ -1,0 +1,1 @@
+Greetings everyone and welcome, going straight to the point here a machine learning module was built inorder to predict the level of plane crash severity, and you will find all the necessary files needed for that module.
